@@ -5,7 +5,7 @@ public class Cheers {
             String anLetters = "AEFHILMNORSX";
             for (int i = 0; i < input.length(); i++) {
                 System.out.print("Give me a");
-                if (anLetters.indexOf(input.charAt(i)) == -1) {
+                if (anLetters.indexOf(input.charAt(i)) != -1) {
                         System.out.print("n");                       
                 }
                 System.out.println(" " + input.charAt(i) + ": " + input.charAt(i) + "!");
